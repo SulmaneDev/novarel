@@ -1,0 +1,58 @@
+{
+  "name": "novarel",
+  "version": "1.0.0",
+  "description": "Novarel is an opinionated Node.js framework with built-in features like robust routing, declarative MVC, a powerful DB API, and versatile rendering (SSR, CSR, ISR, SSG). Designed for scalability, it includes event-driven architecture, factories, seeders, and more",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SulmaneDev/novarel.git"
+  },
+  "keywords": [
+    "nodejs",
+    "framework",
+    "mvc",
+    "routing",
+    "ssr",
+    "csr",
+    "isr",
+    "ssg",
+    "orm",
+    "database",
+    "api",
+    "event-driven",
+    "scalable",
+    "declarative",
+    "backend",
+    "fullstack",
+    "factories",
+    "seeders",
+    "models",
+    "batteries-included"
+  ],
+  "author": "Sulman Khan <whomaderules@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SulmaneDev/novarel/issues"
+  },
+  "homepage": "https://github.com/SulmaneDev/novarel#readme",
+  "dependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.11",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@swc/cli": "^0.6.0",
+    "@swc/core": "^1.11.11",
+    "eslint": "^9.22.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.2.6",
+    "typescript-eslint": "^8.27.0"
+  }
+}

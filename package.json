@@ -4,7 +4,9 @@
   "description": "Novarel is an opinionated Node.js framework with built-in features like robust routing, declarative MVC, a powerful DB API, and versatile rendering (SSR, CSR, ISR, SSG). Designed for scalability, it includes event-driven architecture, factories, seeders, and more",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",

@@ -85,10 +85,3 @@ class Router {
     }
 }
 
-Router.setPrefix("name", () => {
-    Router.get('/home',() => {})
-    Router.post('/home',() => {})
-    Router.put('/home',() => {})
-})
-
-console.log(Router.getRoutes());

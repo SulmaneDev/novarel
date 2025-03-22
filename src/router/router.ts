@@ -1,6 +1,6 @@
 import Route, { Fn, Handler, MethodType } from "./route.js";
 
-class Router {
+export default class Router {
     private static routes: Route[] = [];
     private static prefix: string;
     public static get(path: string, handler: Handler) {

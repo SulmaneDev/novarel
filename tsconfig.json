@@ -1,20 +1,21 @@
 {
-  "compilerOptions": {
-    "target": "es2020",
-    "module": "es6",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "useDefineForClassFields": false,
-    "strict": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
-  },
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    ".git"
-  ]
+	"compilerOptions": {
+		"target": "ES2020",
+		"module": "ES6",
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"useDefineForClassFields": false,
+		"strict": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["dist/*"]
+    }
+	},
+	"include": ["./src/**/*"],
+	"exclude": ["node_modules", ".git", "dist"]
 }

@@ -1,0 +1,14 @@
+{
+	"devDependencies": {
+		"@swc/cli": "^0.7.7",
+		"@swc/core": "^1.11.24",
+		"@types/node": "^22.15.18",
+		"eslint": "^9.27.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.0.0",
+		"prettier": "^3.5.3",
+		"tsconfig-paths": "^4.2.0",
+		"tsup": "^8.5.0",
+		"typescript": "^5.8.3"
+	}
+}

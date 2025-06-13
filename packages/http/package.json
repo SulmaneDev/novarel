@@ -18,11 +18,15 @@
     "test:watch": "jest --watch",
     "dev": "tsc -w"
   },
-  "dependencies": {},
   "devDependencies": {
+    "@types/express": "^5.0.3",
     "typescript": "^5.8.3"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "zod": "^3.25.64"
+  }
 }

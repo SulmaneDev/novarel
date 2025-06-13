@@ -1,0 +1,26 @@
+# Exclude test and example code
+tests/
+examples/
+docs/
+
+# Exclude dev and build tools
+.husky/
+.github/
+
+# Exclude configs and dotfiles
+.eslintrc*
+.prettierrc*
+.commitlint.config.js
+.releaserc
+.swcrc
+jest.config.mjs
+tsconfig.json
+pnpm-*
+
+# Exclude lockfile and node_modules
+node_modules/
+*.log
+
+# Exclude markdown/docs
+CHANGELOG.md
+README.md

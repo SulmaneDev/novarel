@@ -1,0 +1,109 @@
+# Node modules
+node_modules/
+
+# Git
+.git/
+.gitignore
+
+# Prettier config files
+.prettierrc
+.prettierrc.*
+.prettierignore
+
+# SWC config
+.swcrc
+
+# ESLint config
+.eslintrc
+.eslintrc.*
+eslint.config.js
+
+# NPM/PNPM files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+package.json
+
+# Jest config
+jest.config.js
+jest.config.ts
+jest.setup.js
+jest.setup.ts
+
+# Build outputs
+dist/
+build/
+out/
+coverage/
+
+# Vite / Next / SWC / SvelteKit
+.vite/
+.next/
+.svelte-kit/
+.swc/
+
+# Logs
+*.log
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# IDE/editor config
+.vscode/
+.idea/
+
+# Other unneeded artifacts
+*.min.js
+*.min.css
+*.map
+*.snap
+*.tsbuildinfo
+
+# Node / Package Manager Artifacts
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Version Control
+.git/
+.gitignore
+
+# Dependency Managers
+package.json
+package-lock.json
+pnpm-lock.yaml
+pnpm-workspace.yaml
+
+# Tooling Configs
+.prettierrc
+.prettierrc.js
+.prettierrc.json
+.prettierrc.yml
+.prettierignore
+commitlint.config.js
+eslint.config.js
+eslint.config.mjs
+jest.config.js
+jest.config.mjs
+tsconfig.json
+tsconfig.*.json
+
+# CI/CD
+.github/
+*.yaml
+*.yml
+
+# Logs
+*.log
+
+# Docs & Changelogs
+README.md
+readme.md
+CHANGELOG.md
+
+# Examples / Tests
+tests/
+examples/

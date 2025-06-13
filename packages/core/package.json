@@ -1,0 +1,28 @@
+{
+  "name": "@novarel/core",
+  "version": "1.0.0",
+  "main": "dist/index.cjs",
+  "type": "module",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "swc src -d dist --config-file ../../.swcrc",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "test:watch": "jest --watch",
+    "dev": "tsc -w"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

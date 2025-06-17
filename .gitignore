@@ -1,0 +1,120 @@
+# ------------------------
+# OS-SPECIFIC (Windows)
+# ------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ------------------------
+# Node.js
+# ------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npmrc
+
+# ------------------------
+# TypeScript / Build
+# ------------------------
+dist/
+build/
+*.tsbuildinfo
+
+# ------------------------
+# dotenv / Local Secrets
+# ------------------------
+.env
+.env.*
+!.env.example
+
+# ------------------------
+# Testing
+# ------------------------
+coverage/
+test-results/
+.nyc_output/
+.vitest/
+jest.config.js
+coverage-final.json
+*.spec.ts
+*.test.ts
+*.spec.js
+*.test.js
+
+# ------------------------
+# Logs
+# ------------------------
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# ------------------------
+# IDEs / Editors
+# ------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------
+# OS X / Linux / general
+# ------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+.Trashes
+__MACOSX/
+*.swp
+*~
+.cache/
+.tmp/
+temp/
+*.bak
+*.old
+
+# ------------------------
+# Git
+# ------------------------
+.git/
+.gitignore.local
+
+# ------------------------
+# Misc
+# ------------------------
+*.tgz
+*.zip
+*.gz
+*.tar
+*.rar
+*.7z
+*.lock
+dump.rdb
+*.sqlite
+*.sqlite3
+*.db
+*.log.*
+
+# ------------------------
+# Monorepo / Workspace Tools
+# ------------------------
+.pnpm-store/
+lerna-debug.log
+.nodemodules/
+
+# ------------------------
+# Docker / Containerization
+# ------------------------
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+.docker/
+

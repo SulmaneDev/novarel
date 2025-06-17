@@ -1,0 +1,47 @@
+{
+  "name": "novarel",
+  "version": "1.0.0",
+  "description": "A modern, expressive Node.js framework inspired by Laravel",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SulmaneDev/novarel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SulmaneDev/novarel/issues"
+  },
+  "homepage": "https://github.com/SulmaneDev/novarel#readme",
+  "keywords": [
+    "framework",
+    "laravel",
+    "expressive",
+    "backend",
+    "http",
+    "api",
+    "router",
+    "middleware",
+    "typescript"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Sulman <whomaderules@gmail.com>",
+  "engines": {
+    "node": ">=20.11.1"
+  },
+  "license": "ISC"
+}

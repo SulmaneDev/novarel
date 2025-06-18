@@ -34,19 +34,6 @@ build/
 .env.*
 !.env.example
 
-# ------------------------
-# Testing
-# ------------------------
-coverage/
-test-results/
-.nyc_output/
-.vitest/
-jest.config.js
-coverage-final.json
-*.spec.ts
-*.test.ts
-*.spec.js
-*.test.js
 
 # ------------------------
 # Logs

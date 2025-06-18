@@ -12,6 +12,8 @@
         "rootDir": "./src",
         "declaration": true,
         "allowSyntheticDefaultImports": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
         "emitDeclarationOnly": true,
         "isolatedModules": true,
         "types": ["node", "jest"]

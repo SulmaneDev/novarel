@@ -1,0 +1,22 @@
+{
+    "jsc": {
+        "parser": {
+            "syntax": "typescript",
+            "decorators": true,
+            "dynamicImport": true
+        },
+        "target": "es2020",
+        "transform": {
+            "decoratorMetadata": true,
+            "decoratorVersion": "2022-03",
+            "useDefineForClassFields": true
+        }
+    },
+    "module": {
+        "type": "commonjs",
+        "strict": true,
+        "strictMode": true,
+        "importInterop": "node",
+        "preserveImportMeta": true
+    }
+}

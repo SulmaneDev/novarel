@@ -8,8 +8,8 @@
     "type": "module",
     "exports": {
         ".": {
-            "import": "./dist/index.js",
-            "require": "./dist/index.cjs",
+            "import": "./dist/esm/index.js",
+            "require": "./dist/cjs/index.js",
             "types": "./dist/index.d.ts"
         }
     },
@@ -42,7 +42,10 @@
         "prepare": "npx husky install",
         "test": "jest",
         "test:coverage": "jest --coverage=true",
-        "build:types": "npx tsc -p tsconfig.base.json"
+        "build:types": "npx tsc -p tsconfig.base.json",
+        "build:esm": "cd src && npx swc . --config-file ../.esm.swcrc -d ../dist/esm",
+        "build:cjs": "cd src && npx swc . --config-file ../.cjs.swcrc -d ../dist/cjs",
+        "build": "npm run build:esm && npm run build:cjs"
     },
     "author": "Muhammad Sulman <whomaderules@gmail.com>",
     "engines": {
@@ -55,6 +58,9 @@
         "@commitlint/config-conventional": "^19.8.1",
         "@eslint/js": "^9.29.0",
         "@jest/globals": "^30.0.0",
+        "@swc/cli": "^0.7.7",
+        "@swc/core": "^1.12.1",
+        "@swc/jest": "^0.2.38",
         "@types/jest": "^30.0.0",
         "@types/node": "^24.0.3",
         "eslint": "^9.29.0",

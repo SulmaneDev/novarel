@@ -6,13 +6,7 @@ const config: JestConfigWithTsJest = {
     testMatch: ["<rootDir>/tests/**/*.test.ts"],
     moduleFileExtensions: ["ts", "js", "json"],
     transform: {
-        "^.+\\.ts$": [
-            "ts-jest",
-            {
-                useESM: true,
-                tsconfig: "./tsconfig.base.json",
-            },
-        ],
+        "^.+\\.ts$": "@swc/jest",
     },
     extensionsToTreatAsEsm: [".ts"],
 };

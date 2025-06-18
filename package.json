@@ -39,7 +39,10 @@
     "scripts": {
         "lint": "npx eslint src/** --ext .ts,.js,.jsx,.tsx",
         "format": "npx prettier --write src",
-        "prepare": "npx husky install"
+        "prepare": "npx husky install",
+        "test": "jest",
+        "test:coverage": "jest --coverage=true",
+        "build:types": "npx tsc -p tsconfig.base.json"
     },
     "author": "Muhammad Sulman <whomaderules@gmail.com>",
     "engines": {
@@ -47,20 +50,29 @@
     },
     "license": "MIT",
     "devDependencies": {
+        "@babel/preset-typescript": "^7.27.1",
         "@commitlint/cli": "^19.8.1",
         "@commitlint/config-conventional": "^19.8.1",
         "@eslint/js": "^9.29.0",
+        "@jest/globals": "^30.0.0",
+        "@types/jest": "^30.0.0",
+        "@types/node": "^24.0.3",
         "eslint": "^9.29.0",
         "globals": "^16.2.0",
         "husky": "^9.1.7",
+        "jest": "^30.0.0",
         "lint-staged": "^16.1.2",
         "prettier": "^3.5.3",
+        "ts-jest": "^29.4.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3",
         "typescript-eslint": "^8.34.1"
     },
     "lint-staged": {
         "*.{js,ts,json,md}": [
             "prettier --write",
-            "eslint --fix"
+            "eslint --fix",
+            "npm run test:coverage"
         ]
     }
 }

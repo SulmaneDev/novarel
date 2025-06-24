@@ -3,8 +3,6 @@
   "compileOnSave": false,
   "files": [],
   "references": [
-    {
-      "path": "./packages/foundation"
-    }
+    
   ]
 }

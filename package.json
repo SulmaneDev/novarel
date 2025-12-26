@@ -1,0 +1,47 @@
+{
+  "name": "novarel",
+  "version": "1.0.0",
+  "description": "A progressive web framework for backend development",
+  "main": "./src/index.js",
+  "scripts": {
+    "prepare": "rimraf dist",
+    "tsc": "tsc -p tsconfig.build.json",
+    "build": "concurrently \"npm run prepare\" \"npm run tsc\"",
+    "dev": "tsx watch ./src/index.ts",
+    "format": "prettier --write src",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
+  },
+  "keywords": [
+    "novarel",
+    "backend",
+    "api",
+    "framework",
+    "progressive",
+    "web"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.0.3",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.2",
+    "globals": "^16.5.0",
+    "jest": "^30.2.0",
+    "prettier": "^3.7.4",
+    "rimraf": "^6.1.2",
+    "ts-jest": "^29.4.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.50.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "reflect-metadata": "^0.2.2"
+  }
+}

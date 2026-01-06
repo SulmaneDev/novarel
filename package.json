@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "description": "A progressive framework for building web applications in Node.js.",
     "main": "./src/index.js",
+    "private": false,
     "exports": {
         ".": {
             "import": "./src/index.js",
@@ -77,5 +78,8 @@
         "url": "https://github.com/SulmaneDev/novarel/issues",
         "email": "whomaderules@gmail.com"
     },
-    "homepage": "https://github.com/SulmaneDev/novarel#readme"
+    "homepage": "https://github.com/SulmaneDev/novarel#readme",
+    "publishConfig": {
+        "access": "public"
+    }
 }

@@ -1,0 +1,81 @@
+{
+    "name": "novarel",
+    "version": "0.1.0",
+    "description": "A progressive framework for building web applications in Node.js.",
+    "main": "./src/index.js",
+    "exports": {
+        ".": {
+            "import": "./src/index.js",
+            "default": "./src/index.js"
+        },
+        "./container": {
+            "import": "./src/core/container.js",
+            "default": "./src/core/container.js"
+        },
+        "./exceptions": {
+            "import": "./src/core/exception.js",
+            "default": "./src/core/exception.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "src",
+        "LICENSE",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "README.md",
+        "package.json"
+    ],
+    "scripts": {
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+        "dev": "nodemon ./src/index.js",
+        "format": "prettier --write src",
+        "lint": "eslint src",
+        "lint:fix": "eslint src --fix"
+    },
+    "keywords": [
+        "novarel",
+        "framework",
+        "progressive",
+        "convention-over-configuration",
+        "coc",
+        "ioc",
+        "dependency-injection",
+        "di",
+        "service-container",
+        "server",
+        "api",
+        "web",
+        "node.js",
+        "backend",
+        "mvc",
+        "modular",
+        "express",
+        "fastify"
+    ],
+    "author": "Muhammad Sulman <https://github.com/SulmaneDev>",
+    "license": "MIT",
+    "type": "module",
+    "devDependencies": {
+        "@eslint/js": "^9.39.2",
+        "chalk": "^5.6.2",
+        "eslint": "^9.39.2",
+        "globals": "^17.0.0",
+        "jest": "^30.2.0",
+        "nodemon": "^3.1.11",
+        "prettier": "^3.7.4"
+    },
+    "dependencies": {
+        "commander": "^14.0.2",
+        "loadash": "^1.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SulmaneDev/novarel.git"
+    },
+    "bugs": {
+        "url": "https://github.com/SulmaneDev/novarel/issues",
+        "email": "whomaderules@gmail.com"
+    },
+    "homepage": "https://github.com/SulmaneDev/novarel#readme"
+}

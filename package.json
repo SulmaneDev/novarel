@@ -1,5 +1,5 @@
 {
-    "name": "novarel",
+    "name": "@sulman/novarel",
     "version": "0.1.0",
     "description": "A progressive framework for building web applications in Node.js.",
     "main": "./src/index.js",
